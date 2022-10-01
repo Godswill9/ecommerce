@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./header";
+import Homepage from "./pages/homePage";
+import {BrowserRouter, Routes, Route, useParams} from "react-router-dom"
+import Laptops from "./pages/Laptops";
+import Gadgets from "./pages/Gadgets";
+import Signup from "./pages/authentication/signup";
+import Login from "./pages/authentication/login";
+import FixPc from "./pages/fixPc";
+import Phones from "./pages/phones";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+            <Route path={`/`} element={<Homepage/>}/>
+            <Route path={`/signup`} element={<Signup/>}/>
+            <Route path={`/login`} element={<Login/>}/>
+            <Route path={`/findLaptops`} element={<Laptops/>}/>
+            <Route path={`/findGadgets`} element={<Gadgets/>}/>
+            <Route path={`/findPhones`} element={<Phones/>}/>
+            <Route path={`/repairs`} element={<FixPc/>}/>
+      </Routes>
+      </BrowserRouter>
+       {/* <Homepage/> */}
     </div>
   );
 }
