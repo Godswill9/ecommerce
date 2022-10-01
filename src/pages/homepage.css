@@ -1,0 +1,592 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.Home {
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  background: url("../../public/images/headset1.jpeg"), black;
+  justify-content: center;
+  background-blend-mode: difference;
+  transition: 0.4s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+.hero .part1 {
+  width: 80%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 3em;
+}
+.hero .part1 h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-family: sans-serif;
+  justify-content: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+.hero .part1 h1 .products {
+  height: 1.3em;
+  overflow: hidden;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  margin: 0 7px 0 7px;
+  border-radius: 5px;
+}
+.hero .part1 h1 .products div {
+  transform: translateY(0%);
+  padding: 0 4px 0 4px;
+  transition: 0.2s ease-in-out;
+}
+.hero .part1 p {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 800;
+  margin: 1em 0 0 0;
+}
+.hero .part1 button {
+  padding: 15px 30px 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-top: 1.4em;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+.hero .part1 button:hover {
+  background-color: white;
+  color: black;
+}
+.hero .part2 {
+  margin-left: 20px;
+}
+.hero .part2 .imageCont {
+  display: flex;
+  width: 40em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero .part2 .imageCont img {
+  border: 5px solid black;
+  margin: 5px;
+}
+.hero .part2 .imageCont .laptop {
+  position: relative;
+}
+.hero .part2 .imageCont .laptop span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+  background-color: black;
+  padding: 10px;
+}
+.hero .part2 .imageCont .laptop img {
+  width: 20em;
+  height: 26em;
+}
+.hero .part2 .imageCont .inner .Gadgets,
+.hero .part2 .imageCont .inner .Phones {
+  position: relative;
+}
+.hero .part2 .imageCont .inner .Gadgets span,
+.hero .part2 .imageCont .inner .Phones span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+  background-color: black;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.Home .announce {
+  width: 100%;
+  font-size: 30px;
+  font-family: sans-serif;
+  padding: 30px;
+  border-bottom: 0.5px solid black;
+  text-align: center;
+}
+
+.Home .billboard {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.Home .billboard .indiv:first-child {
+  position: relative;
+  border: 0.5px solid white;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  margin: 15px;
+  width: 40em;
+  height: 29em;
+}
+.Home .billboard .indiv:first-child img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:first-child div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.801);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.5s ease;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:first-child div button {
+  padding: 15px 30px 15px 30px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.Home .billboard .indiv:nth-child(2) {
+  position: relative;
+  border: 0.5px solid white;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  margin: 15px;
+  width: 29em;
+  height: 25em;
+}
+.Home .billboard .indiv:nth-child(2) img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:nth-child(2) div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.5s ease;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:nth-child(2) div button {
+  padding: 15px 30px 15px 30px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.Home .billboard .indiv:nth-child(3) {
+  position: relative;
+  border: 0.5px solid white;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  margin: 15px;
+  width: 29em;
+  height: 25em;
+}
+.Home .billboard .indiv:nth-child(3) img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:nth-child(3) div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.438);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.5s ease;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:nth-child(3) div button {
+  padding: 15px 30px 15px 30px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.Home .billboard .indiv:nth-child(4) {
+  position: relative;
+  border: 0.5px solid white;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  margin: 15px;
+  width: 29em;
+  height: 25em;
+}
+.Home .billboard .indiv:nth-child(4) img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:nth-child(4) div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.438);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.5s ease;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Home .billboard .indiv:nth-child(4) div button {
+  padding: 15px 30px 15px 30px;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.Home .billboard .indiv {
+  overflow: hidden;
+  cursor: pointer;
+}
+.Home .billboard .indiv img {
+  transition: 1s ease-in-out;
+}
+.Home .billboard .indiv:hover > img {
+  transform: scale(120%);
+}
+
+.flashSales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.flashSales .innerr {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 20px white;
+}
+.flashSales h1 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+.flashSales .flash {
+  display: flex;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+.flashSales .flash .indiv {
+  margin: 10px;
+  box-shadow: 0 0 10px white;
+  border: 3px solid white;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.flashSales .flash .indiv .up {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.flashSales .flash .indiv .up img {
+  width: 17em;
+  height: 19em;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border: 2px solid red;
+}
+.flashSales .flash .indiv .up span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: red;
+  padding: 5px;
+  border-radius: 2px;
+  color: whitesmoke;
+  font-family: verdana;
+}
+.flashSales .flash .indiv .more .formerPrice {
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: line-through;
+  border-bottom: 0.5px solid black;
+}
+.flashSales .flash .indiv .more .newPrice {
+  font-size: 35px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.flashSales .flash .indiv .more .name {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.flashSales .flash .indiv .hovered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.274);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.flashSales .flash .indiv .hovered button {
+  padding: 15px 30px 15px 30px;
+  cursor: pointer;
+  margin: 3px;
+}
+.flashSales .flash .indiv:hover > .hovered {
+  display: flex;
+}
+.flashSales .flash .indiv:hover > .up img {
+  transform: scale(110%);
+}
+.flashSales .big_timer {
+  text-align: center;
+}
+.flashSales .big_timer span {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(34, 34, 34);
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.advertSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 4em;
+}
+.advertSec .innerr {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 20px white;
+}
+.advertSec h1 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.advertSec .flash {
+  display: flex;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+.advertSec .flash .indiv {
+  margin: 10px;
+  box-shadow: 0 0 10px white;
+  border: 3px solid white;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.advertSec .flash .indiv .up {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.advertSec .flash .indiv .up img {
+  width: 16em;
+  height: 15em;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.advertSec .flash .indiv .up span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: red;
+  padding: 5px;
+  border-radius: 2px;
+  color: whitesmoke;
+  font-family: verdana;
+}
+.advertSec .flash .indiv .more .formerPrice {
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: line-through;
+  border-bottom: 0.5px solid black;
+}
+.advertSec .flash .indiv .more .newPrice {
+  font-size: 35px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.advertSec .flash .indiv .more .name {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.advertSec .flash .indiv .hovered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.274);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.advertSec .flash .indiv .hovered button {
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  margin: 3px;
+}
+.advertSec .flash .indiv:hover > .hovered {
+  display: flex;
+}
+.advertSec .flash .indiv:hover > .up img {
+  transform: scale(110%);
+}
+.advertSec .big_timer {
+  text-align: center;
+}
+.advertSec .big_timer span {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(34, 34, 34);
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.Home .getInTouch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  background-color: black;
+  color: white;
+}
+.Home .getInTouch .inner {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.Home .getInTouch .inner h1 {
+  text-align: center;
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+.Home .getInTouch .inner form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.3em;
+  flex-wrap: wrap;
+}
+.Home .getInTouch .inner form input {
+  height: 2.6em;
+  width: 19em;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 19px;
+  display: block;
+}
+.Home .getInTouch .inner form button {
+  padding: 10px;
+  margin-left: 4px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 6px;
+}
+.Home .getInTouch .inner .more {
+  border-bottom: 0.3px solid white;
+  margin-top: 1em;
+}
+.Home .getInTouch .inner .more h4 {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.Home .getInTouch .inner .more .links {
+  margin: 4px;
+}
+.Home .getInTouch .inner .more .links i {
+  margin: 3px;
+  font-size: 23px;
+}
+.Home .getInTouch .inner .copyright {
+  text-align: center;
+  font-size: 20px;
+  padding: 14px;
+}/*# sourceMappingURL=homepage.css.map */

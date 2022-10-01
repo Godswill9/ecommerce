@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  border: 0.5px solid black;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.Header .logo {
+  border: 0.5px solid black;
+  width: 13em;
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Header .logo .texts {
+  font-size: 30px;
+  display: flex;
+}
+.Header .logo img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+.compView {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-left: 10em;
+}
+.compView .innerDiv {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+.compView .innerDiv .link {
+  border: 0.4px solid black;
+  position: relative;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+}
+.compView .innerDiv .link .linkHead {
+  cursor: pointer;
+  font-size: 17px;
+  font-family: monospace;
+  text-shadow: 0 0 10px white;
+}
+.compView .innerDiv .link .linkHead i {
+  font-size: 15px;
+}
+.compView .innerDiv .link .linkBody {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 13em;
+  height: 0px;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 10px;
+}
+.compView .innerDiv .link .linkBody a {
+  text-decoration: none;
+  color: black;
+}
+.compView .innerDiv .link .linkBody a div {
+  border-bottom: 0.4px solid black;
+  padding: 20px;
+  display: block;
+  transition: 0.1s ease-in-out;
+  background-color: whitesmoke;
+}
+.compView .innerDiv .link .linkBody a div:hover {
+  background-color: rgba(230, 230, 230, 0.726);
+  color: black;
+}
+.compView .moreSec {
+  display: flex;
+  margin-left: 20px;
+  background-color: rgb(255, 102, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+.compView .moreSec i {
+  margin: 7px;
+  font-size: 21px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.compView .innerDiv .link:hover > .linkBody {
+  height: 15em;
+}
+
+.Header {
+  justify-content: space-between;
+}
+
+.MobileView {
+  position: relative;
+  display: none;
+  border-radius: 10px;
+}
+.MobileView .icon i {
+  font-size: 26px;
+  margin-right: 2em;
+  cursor: pointer;
+}
+.MobileView .dropdown {
+  width: 20em;
+  position: absolute;
+  right: 0;
+  top: 200%;
+  border-radius: 5px;
+  z-index: 5;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+.MobileView .dropdown .first .link a {
+  color: white;
+  text-decoration: none;
+}
+.MobileView .dropdown .first .link .linkHead {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: monospace;
+  background-color: black;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.MobileView .dropdown .first .link .linkBody {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+.MobileView .dropdown .first .link .linkBody a {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+}
+.MobileView .dropdown .first .link .linkBody a div {
+  padding: 10px;
+  padding-left: 30px;
+  background-color: white;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  transition: 0.1s ease-in-out;
+}
+.MobileView .dropdown .first .link .linkBody a div:hover {
+  background-color: black;
+  color: white;
+}
+.MobileView .dropdown .second {
+  border-top: 0.5px solid white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MobileView .dropdown .second .moreSec {
+  display: flex;
+  margin: 20px;
+  background-color: orangered;
+  padding: 10px;
+  border-radius: 10px;
+}
+.MobileView .dropdown .second .moreSec .linkHead i {
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 849px) {
+  .Header .logo {
+    margin-left: 0.2em;
+  }
+  .compView {
+    display: none;
+  }
+  .MobileView {
+    display: block;
+  }
+}/*# sourceMappingURL=header.css.map */
