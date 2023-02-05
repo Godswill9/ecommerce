@@ -13,7 +13,7 @@ export default function Header() {
        else if(dropdown==="10.2em")setDropdown("0px")
     }
   return (
-    <div className='Header'>
+    <div className='Header'> 
         <div className='logo'>
             <img src='/images/laptop1.jpeg'></img>
             <div className='texts'>

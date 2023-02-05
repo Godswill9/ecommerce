@@ -22,12 +22,12 @@
   cursor: pointer;
 }
 .Header .logo .texts {
-  font-size: 30px;
+  font-size: 24px;
   display: flex;
 }
 .Header .logo img {
-  width: 4em;
-  height: 4em;
+  width:2.5em;
+  height:2.5em;
   border-radius: 50%;
 }
 
